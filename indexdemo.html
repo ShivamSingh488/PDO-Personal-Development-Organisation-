@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <style>
+        * {
+            margin: 0;
+            font-family: arial;
+        }
+
+
+        .navbar_mains {
+            display: flex;
+            background-color:#94946B;
+            font-weight: bold;
+            text-shadow: 0px 1px 1px #000000;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+
+        }
+
+        ul {
+            list-style-type: none;
+
+        }
+
+        li {
+            border-left: 1px solid black;
+            border-bottom: 2px solid black;
+            padding: 10px;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-evenly;
+            background: linear-gradient(#94946B, white);
+            height: 148px;
+            text-align: center;
+        }
+
+
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Add your custom styles here */
+        .slider-container {
+            width: 80%;
+            margin: auto;
+        }
+
+        .slider {
+            width: 100%;
+        }
+
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            height: auto;
+
+            background-color: white;
+           
+        }
+
+
+        .item1-1{
+        display: flex;
+     
+        margin-bottom:10px; 
+        margin-left: 10px;
+        margin-right:10px;            /* Corrected property name */
+        box-shadow: 1px 1px 5px 0px #888888;
+    padding:15px;
+        }
+        footer {
+            background:#94946B;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .footer-links li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color:black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div><img src="./images/logo.png" style=" max-width: 100%;
+      width: 150px; /* Set a specific maximum width if needed */
+      height: auto;"></div>
+        <div>
+            <h1 style="font-size: 2rem; /* Use relative units for font size */
+      padding-top: 1rem; /* Use relative units for padding */
+      letter-spacing: 0.5rem; /* Use relative units for letter spacing */
+      margin: 0; /* Reset default margin */padding-bottom:10px;">PDO</h1>
+            <h2 style="font-size: 1.5rem; /* Use relative units for font size */
+      margin: 0; /* Reset default margin */">PERSONALITY DEVELOPMENT ORGANISATION</h2>
+        </div>
+        <div><img src="./images/sirimage-removebg-preview.png" style="
+      max-width: 100%;
+      width: 145px; /* Set a specific maximum width if needed */
+      height: auto;
+    "></div>
+    </div>
+    <div class="navbar">
+        <ul class="navbar_mains">
+            <li><a href="" target="_blank">Home</a></li>
+            <li><a href="" target="_blank">Batches</a></li>
+            <li><a href="" target="_blank">Teachers'_Profile</a></li>
+            <li><a href="./playlist.html" target="_blank">Playlist</a></li>
+            <li><a href="" target="_blank">Study_Matrials</a></li>
+            <li><a href="" target="_blank">Contact_Us</a></li>
+        </ul>
+    </div>
+
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div><img src="./images/image1.jpg" alt="Image 1"></div>
+            <div><img src="./images/image2.jpg" alt="Image 2"></div>
+            <div><img src="./images/image1.jpg" alt="Image 3"></div>
+            <div><img src="./images/image5.jpg" alt="Image 4"></div>
+            <!-- Add more image entries as needed -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="item1-1">
+            <div  class="firstbox" style="padding:20px;">
+                <div class="hading12">
+                    <h3 style="text-align:center;padding-bottom:20px;" >Welcome to PDO English Coaching: Elevate Your
+                        English Speaking Skills with
+                        Confidence!</h3>
+                </div>
+                <p style="font-weight:normal;">Embark on a transformative journey to master the art of spoken
+                    English with PDO English Coaching. Whether you're starting from scratch or aiming to refine your
+                    existing
+                    skills, our platform is your dedicated partner in achieving English fluency.
+                <p style="font-weight:normal;">
+                    At PDO English Coaching, we understand the importance of effective communication in today's global
+                    landscape.
+                    Our team of seasoned instructors is committed to providing you with engaging lessons, interactive
+                    exercises,
+                    and real-world conversations, ensuring you not only learn but also confidently apply your English
+                    speaking
+                    skills in various contexts.
+                </p>
+            </div>
+            <div  class="item1-2">
+             <img style="max-width: 100%;
+             width:115rem; /* Set a specific maximum width if needed */
+             height: auto; "src="./images/home-illustration (1).png" alt="">
+            </div>
+        </div>
+        <div class="item2">
+
+        </div>
+    </div>
+    <footer>
+        <div>
+            <p>&copy; 2024 PDO English Institute. All rights reserved.</p>
+        </div>
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#slider").slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: true
+            });
+        });
+    </script>
+
+</body>
+
+</html>
