@@ -109,8 +109,74 @@
 
         .footer-links a {
             text-decoration: none;
-            color:black;
+            color:black;}
+            .container2{
+                display:block;
+                cursor: pointer;
+                background:#94946B;
+                padding:10px;
+            }
+            .Dropdown {
+                padding: 10px;
+                background-color: rgb(144, 60, 32);
+                border: none;
+                font-weight: bold;
+                margin:10px;
+                color:white;
+                font-size:16px;
+                
+            }
+    
+          .item{
+            padding:20px;
+            border-bottom: 1px solid white;
+            margin-bottom: auto;
+            background-color:rgb(49, 46, 46);
+            color:white;
+            
+          }
+            
+            .items{
+                box-shadow: 0px 8px 16px gray;
+                min-width:116px;
+                height:fit-content;
+                display: none;
+    
+            }   
+            .container2:hover .items{
+                display:block;
+                margin:0px;
+                padding:0px;
+                
+            }
+       .line{
+        width:30px;
+        height:3px;
+        background-color: black;
+        margin-bottom:5px;
+       }
+            
+
+        @media screen and (width<670px){
+            .header div img{
+               display: none;
+            }
+            .image3{
+                display:none;
+            }
+            .navbar_mains{
+                display:none;
+            }
+
         }
+        @media screen and (width>=670px){
+            
+    .container2{
+        display:none;
+    }
+        }
+        
+        
     </style>
 </head>
 
@@ -143,6 +209,17 @@
             <li><a href="" target="_blank">Contact_Us</a></li>
         </ul>
     </div>
+    <div class="container2" >
+        <a style="text-decoration:none;" href=""><div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div></a>
+       <div class="items">
+           <div class="item">Home</div>
+           <div class="item">Batches</div>
+           <div class="item">Teacher_Profile</div>
+           <div class="item">Playlist</div>
+       </div>
+   </div>
 
     <div class="slider-container">
         <div class="slider" id="slider">
@@ -178,7 +255,7 @@
             <div style="display: flex;
             justify-content: center; /* Center horizontally within the item's container */
             align-items: center; " class="item1-2">
-             <img style="max-width: 100%;
+             <img class="image3"style="max-width: 100%;
              width:115rem; /* Set a specific maximum width if needed */
              height: auto; "src="./home-illustration (1).png" alt="">
             </div>
@@ -187,6 +264,7 @@
 
         </div>
     </div>
+   
     <footer>
         <div>
             <p>&copy; 2024 PDO English Institute. All rights reserved.</p>
