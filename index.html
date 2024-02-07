@@ -149,10 +149,19 @@
         .line {
             display: flex;
             border:0px;
-            background-color: black;
+            background-color:white;
             margin-bottom: 5px;
+            width: 1.5rem;
+            
+    
         }
-
+.lines{
+    padding:0px 10px;
+    display: inline-block;
+   border:.1rem solid white;
+    padding: .3rem;
+    border-radius:5px;
+}
 
         @media screen and (max-width: 670px) {
     .header div img {
@@ -205,10 +214,11 @@
     </div>
     <div class="container2">
         <a onclick="toggle()" style="text-decoration:none;" href="#">
+            <div class="lines" >
             <button class="line"  ></button>
             <button class="line"   ></button>
             <button class="line"  ></button>
-        </a>
+        </a></div>
         <div class="items">
             <div class='item'><a  href="#" target="_blank">Home</a></div>
             <div class="item"><a  href="#" target="_blank">Batches</a></div>
