@@ -18,11 +18,14 @@
 
         .navbar_mains {
             display: flex;
-            background-color:#94946B;
+            background-color: #94946B;
             font-weight: bold;
             text-shadow: 0px 1px 1px #000000;
             margin-bottom: 10px;
             flex-wrap: wrap;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+             font-weight: 500;
 
         }
 
@@ -73,29 +76,31 @@
             height: auto;
 
             background-color: white;
-           
+
         }
 
 
-        .item1-1{
-        display: flex;
-     
-        margin-bottom:10px; 
-        margin-left: 10px;
-        margin-right:10px;            /* Corrected property name */
-        box-shadow: 1px 1px 5px 0px #888888;
-    padding:15px;
+        .item1-1 {
+            display: flex;
+
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            /* Corrected property name */
+            box-shadow: 1px 1px 5px 0px #888888;
+            padding: 15px;
         }
+
         footer {
-            background:#94946B;
+            background: #94946B;
             color: black;
             padding: 20px;
             text-align: center;
         }
 
         .footer-links {
-            display:flex;
-            flex-wrap:wrap;
+            display: flex;
+            flex-wrap: wrap;
             list-style: none;
             padding: 0;
             margin: 10px 0;
@@ -109,80 +114,69 @@
 
         .footer-links a {
             text-decoration: none;
-            color:black;}
-            .container2{
-                display:block;
-                cursor: pointer;
-                background:#94946B;
-                padding:10px;
-            }
-            .Dropdown {
-                padding: 10px;
-                background-color: rgb(144, 60, 32);
-                border: none;
-                font-weight: bold;
-                margin:10px;
-                color:white;
-                font-size:16px;
-                
-            }
-    
-          .item{
-            padding:20px;
-            border-bottom: 1px solid white;
+            color: black;
+        }
+
+        .container2 {
+            display: block;
+            cursor: pointer;
+            background: #94946B;
+            padding: 10px 0px;
+           
+        }
+        .item {
+            padding: 8px 10px;
+            border-bottom: 1px solid #94946B;
             margin-bottom: auto;
-            background-color:rgb(49, 46, 46);
-            color:white;
-            
-          }
-            
-            .items{
-                box-shadow: 0px 8px 16px gray;
-                min-width:116px;
-                height:fit-content;
-                display: none;
-    
-            }   
-            .container2:hover .items{
-                display:block;
-                margin:0px;
-                padding:0px;
-                
-            }
-       .line{
-        width:30px;
-        height:3px;
-        background-color: black;
-        margin-bottom:5px;
-       }
-            
+            background-color:#fff;
+            color: #565656;
+            font-size: .9em;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+           font-weight: 500;
+}
+        
 
-        @media screen and (width<670px){
-            .header div img{
-               display: none;
-            }
-            .image3{
-                display:none;
-            }
-            .navbar_mains{
-                display:none;
-            }
+        .items {
+            box-shadow: 0px 8px 16px gray;
+            min-width: 116px;
+            height: fit-content;
+            display: none;
 
         }
-        @media screen and (width>=670px){
-            
-    .container2{
-        display:none;
+
+       
+        .line {
+            display: flex;
+            border:0px;
+            background-color: black;
+            margin-bottom: 5px;
+        }
+
+
+        @media screen and (max-width: 670px) {
+    .header div img {
+        display: none;
     }
-        }
-        
-        
+    .image3 {
+        display: none;
+    }
+    .navbar_mains {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 670px) {
+    .container2 {
+        display: none;
+    }
+}
     </style>
 </head>
 
 <body>
     <div class="header">
-        <div><img src="./logo.png" style=" max-width: 100%;
+        <div><img src="./images/logo.png" style=" max-width: 100%;
       width: 150px; /* Set a specific maximum width if needed */
       height: auto;"></div>
         <div>
@@ -193,7 +187,7 @@
             <h2 style="font-size: 1.5rem; /* Use relative units for font size */
       margin: 0; /* Reset default margin */">PERSONALITY DEVELOPMENT ORGANISATION</h2>
         </div>
-        <div><img src="./sirimage-removebg-preview.png" style="
+        <div><img src="./images/sirimage-removebg-preview.png" style="
       max-width: 100%;
       width: 145px; /* Set a specific maximum width if needed */
       height: auto;
@@ -209,32 +203,34 @@
             <li><a href="" target="_blank">Contact_Us</a></li>
         </ul>
     </div>
-    <div class="container2" >
-        <a style="text-decoration:none;" href=""><div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div></a>
-       <div class="items">
-           <div class="item">Home</div>
-           <div class="item">Batches</div>
-           <div class="item">Teacher_Profile</div>
-           <div class="item">Playlist</div>
-       </div>
-   </div>
+    <div class="container2">
+        <a onclick="toggle()" style="text-decoration:none;" href="#">
+            <button class="line"  ></button>
+            <button class="line"   ></button>
+            <button class="line"  ></button>
+        </a>
+        <div class="items">
+            <div class="item">Home</div>
+            <div class="item">Batches</div>
+            <div class="item">Teacher_Profile</div>
+            <div class="item">Playlist</div>
+        </div>
+    </div>
 
     <div class="slider-container">
         <div class="slider" id="slider">
-            <div><img src="./image1.jpg" alt="Image 1"></div>
-            <div><img src="./image2.jpg" alt="Image 2"></div>
-            <div><img src="./image1.jpg" alt="Image 3"></div>
-            <div><img src="./image5.jpg" alt="Image 4"></div>
+            <div><img src="./images/image1.jpg" alt="Image 1"></div>
+            <div><img src="./images/image2.jpg" alt="Image 2"></div>
+            <div><img src="./images/image1.jpg" alt="Image 3"></div>
+            <div><img src="./images/image5.jpg" alt="Image 4"></div>
             <!-- Add more image entries as needed -->
         </div>
     </div>
     <div class="container">
         <div class="item1-1">
-            <div  class="firstbox" style="padding:20px;">
+            <div class="firstbox" style="padding:20px;">
                 <div class="hading12">
-                    <h3 style="text-align:center;padding-bottom:20px;" >Welcome to PDO English Coaching: Elevate Your
+                    <h3 style="text-align:center;padding-bottom:20px;">Welcome to PDO English Coaching: Elevate Your
                         English Speaking Skills with
                         Confidence!</h3>
                 </div>
@@ -255,16 +251,16 @@
             <div style="display: flex;
             justify-content: center; /* Center horizontally within the item's container */
             align-items: center; " class="item1-2">
-             <img class="image3"style="max-width: 100%;
+                <img class="image3" style="max-width: 100%;
              width:115rem; /* Set a specific maximum width if needed */
-             height: auto; "src="./home-illustration (1).png" alt="">
+             height: auto; " src="./images/home-illustration (1).png" alt="">
             </div>
         </div>
         <div class="item2">
 
         </div>
     </div>
-   
+
     <footer>
         <div>
             <p>&copy; 2024 PDO English Institute. All rights reserved.</p>
@@ -291,6 +287,18 @@
                 dots: true
             });
         });
+        function toggle()
+        {
+           let hiddenItems=document.querySelector('.items');
+           
+           if(hiddenItems.style.display==="none"|| hiddenItems.style.display === ""){
+            hiddenItems.style.display="block";
+           }
+           else{
+            hiddenItems.style.display="none";
+           }
+        }
+        
     </script>
 
 </body>
